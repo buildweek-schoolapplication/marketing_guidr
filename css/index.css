@@ -1,0 +1,470 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+.main_container {
+  width: 100%;
+  height: 100%;
+}
+.main_container .top_nav_container {
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+.main_container .top_nav_container .social_containers {
+  width: 50%;
+  height: 50px;
+}
+.main_container .top_nav_container .social_containers .social {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.main_container .top_nav_container .social_containers .social i {
+  font-size: 20pt;
+  margin-right: 10%;
+}
+.main_container .top_nav_container .nav_container {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.main_container .top_nav_container .nav_container nav a {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  text-decoration: none;
+  color: grey;
+  margin-right: 3.75rem;
+}
+.main_container .top_logo_container {
+  width: 100%;
+  height: 100px;
+  border: 1px dashed lightgray;
+  display: flex;
+}
+.main_container .top_logo_container .logo_container {
+  width: 25%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+.main_container .top_logo_container .logo_container img {
+  width: 200px;
+  height: 96px;
+}
+.main_container .top_logo_container .middle_nav_container {
+  width: 50%;
+  height: 98px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.main_container .top_logo_container .middle_nav_container a {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  text-decoration: none;
+  color: grey;
+  margin-right: 3.75rem;
+}
+.main_container .middle_container {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_container .middle_container .header_img_container {
+  width: 100%;
+  height: 600px;
+}
+.main_container .middle_container .header_img_container .header_img {
+  width: 100%;
+  height: 600px;
+  background: url(../img/church-of-the-king-635531-unsplash.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.main_container .middle_container .middle_box_container {
+  width: 1000px;
+  height: 350px;
+  margin-top: -150px;
+  display: flex;
+  background-color: #0076C0;
+  z-index: 1;
+}
+.main_container .middle_container .middle_box_container .section1 {
+  width: 50%;
+  height: 350px;
+  border: 1px dashed lightgrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.main_container .middle_container .middle_box_container .section1 i {
+  font-size: 5.75rem;
+  color: white;
+}
+.main_container .middle_container .middle_box_container .section1 h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  text-decoration: none;
+  color: white;
+  margin-top: 1rem;
+}
+.main_container .middle_container .middle_box_container .section1 p {
+  width: 300px;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  margin-top: 1rem;
+  font-size: 12pt;
+}
+.main_container .middle_container .middle_box_container .section1 a {
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+.main_container .middle_container .middle_box_container .section2 {
+  width: 50%;
+  height: 350px;
+  border: 1px dashed #ececec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.main_container .middle_container .middle_box_container .section2 i {
+  font-size: 5.75rem;
+  color: white;
+}
+.main_container .middle_container .middle_box_container .section2 h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  text-decoration: none;
+  color: white;
+}
+.main_container .middle_container .middle_box_container .section2 p {
+  width: 300px;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  margin-top: 1rem;
+  font-size: 12pt;
+}
+.main_container .middle_container .middle_box_container .section2 a {
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+.main_container .middle_content_container1 {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+.main_container .middle_content_container1 .middle_content1 {
+  width: 70%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main_container .middle_content_container1 .middle_content1 h2 {
+  width: 100%;
+  color: blue;
+  font-size: 1.8rem;
+  font-family: 'Bree Serif', serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+.main_container .middle_content_container1 .middle_content1 p {
+  width: 85%;
+  margin-top: 1.25rem;
+  color: grey;
+  font-family: 'Bree Serif', serif;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+.main_container .middle_content_container2 {
+  width: 100%;
+  height: 600px;
+  display: flex;
+}
+.main_container .middle_content_container2 .information_content2 {
+  width: 50%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main_container .middle_content_container2 .middle_content_2 {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_container .middle_content_container2 .middle_content_2 img {
+  width: 650px;
+  height: 500px;
+}
+.main_container .middle_content_container2 .middle_content_2 h2 {
+  font-size: 1.5rem;
+  font-family: 'Bree Serif', serif;
+  font-family: 'Open Sans', sans-serif;
+  color: grey;
+  font-weight: 700;
+}
+.main_container .middle_content_container2 .middle_content_2 #info1 {
+  font-size: 1.8rem;
+  font-family: 'Bree Serif', serif;
+  font-family: 'Open Sans', sans-serif;
+  color: blue;
+  font-weight: 700;
+}
+.main_container .middle_content_container2 .middle_content_2 p {
+  width: 80%;
+  font-size: 1.5rem;
+  font-family: 'Bree Serif', serif;
+  font-family: 'Open Sans', sans-serif;
+  color: grey;
+  line-height: 2.5rem;
+}
+.main_container .middle_content_container3 {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_container .middle_content_container3 .middle_content_3 {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_container .middle_content_container3 .middle_content_3 .information_content3 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main_container .middle_content_container3 .middle_content_3 .information_content3 h2 {
+  font-size: 1.5rem;
+  font-family: 'Bree Serif', serif;
+  font-family: 'Open Sans', sans-serif;
+  color: grey;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+.main_container .middle_content_container3 .middle_content_3 .information_content3 #info2 {
+  font-size: 1.8rem;
+  font-family: 'Bree Serif', serif;
+  font-family: 'Open Sans', sans-serif;
+  color: blue;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+.main_container .middle_content_container3 .middle_content_3 .information_content3 p {
+  width: 80%;
+  font-size: 1.5rem;
+  font-family: 'Bree Serif', serif;
+  font-family: 'Open Sans', sans-serif;
+  color: grey;
+  line-height: 2.5rem;
+}
+.main_container .middle_content_container3 .middle_content_3 img {
+  width: 650px;
+  height: 500px;
+}
+.main_container .checkout_btn_container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+.main_container .checkout_btn_container button {
+  color: #fff;
+  background-color: #0076C0;
+  border-color: #0076C0;
+  font-size: 1.7rem;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 1.4rem 4rem;
+  font-size: 1.5rem;
+  font-family: "freightSans_ProSemiBold", Arial, sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 1.2px;
+  outline: none;
+  border: none;
+}
+.main_container .checkout_btn_container button:hover {
+  background-color: #0066a7;
+}
+footer {
+  margin-top: 3rem;
+  width: 100%;
+  height: 50px;
+  background: #3A3E41;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
