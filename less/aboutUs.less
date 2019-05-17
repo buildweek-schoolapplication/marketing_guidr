@@ -1,0 +1,269 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+nav{
+    margin-top: 10px;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    background-color: #ffffff;
+}
+
+nav ul{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    height: 50px;
+    text-decoration: none;
+    list-style: none;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+
+
+#img {
+    background-image: url("../img/campaign-creators-1166997-unsplash-1.jpg");
+    width: 100%;
+    height: 430px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    z-index: -10;
+    filter: blur(1.5px);
+    
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -5;
+    width: 100%;
+    height: 430px;
+    display: flex;
+}
+
+.header {
+    z-index: 2;
+    position: absolute;
+    margin: 0 auto;
+    height: 482px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  
+
+
+    h2 {
+        font-size: 1.4rem;
+        font-family: "freightSans_ProLight", Arial, sans-serif;
+        color: #ffffff;
+       display: block;
+       justify-content: center;
+       text-align: center;
+       padding-bottom: 10px;
+       
+
+    }
+    p {
+        font-size: 3rem;
+        font-family: "freightSans_ProLight", Arial, sans-serif;
+        color: #ffffff;
+        margin: 0 auto;
+        width: 1390px;
+        text-align: center;
+       }
+    }
+   
+.gray-block { 
+    width: 100%;
+    height: 282px;
+    background-color: #F6F6F6;
+    display: flex;
+    align-items: center;
+
+
+    
+    .block {
+        width: 850px;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1rem;
+
+}
+
+}
+
+.white-space {
+    width: 100%;
+    height: 150px;
+}
+
+.team h2 {
+    color: #7D7C7C;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.team-p {
+width: 80%;
+margin: 0 auto;
+
+
+ p {
+    color: #00447E;
+    font-size: 3rem;
+    display: flex;
+    text-align: center;
+}
+
+}
+
+.tabs {
+    margin: 0 auto;
+    padding-top: 25px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
