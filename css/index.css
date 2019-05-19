@@ -134,7 +134,88 @@ table {
   width: 100%;
   height: 100%;
 }
-.main_container .top_nav_container {
+.main_container .login_container {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_container .login_container .login_form {
+  color: rgba(255, 255, 255, 0.55);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16.5pt;
+  font-weight: normal;
+  line-height: 1.75;
+  width: 30%;
+  height: 500px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5em;
+  border: solid 1px rgba(255, 255, 255, 0.15);
+}
+.main_container .login_container .login_form .firstname {
+  width: 350px;
+  height: 50px;
+  margin-bottom: 25px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0.25em;
+  border: none;
+  border: solid 1px rgba(255, 255, 255, 0.15);
+  color: inherit;
+  display: block;
+  outline: 0;
+  padding: 0 1em;
+  text-decoration: none;
+  color: white !important;
+}
+.main_container .login_container .login_form .password {
+  width: 350px;
+  height: 50px;
+  margin-bottom: 25px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0.25em;
+  border: none;
+  border: solid 1px rgba(255, 255, 255, 0.15);
+  color: inherit;
+  display: block;
+  outline: 0;
+  padding: 0 1em;
+  text-decoration: none;
+}
+.main_container .login_container .login_form .login_btn {
+  width: 40%;
+  transition: border-color 0.2s ease;
+  background-color: transparent;
+  border: solid 1px !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+  border-radius: 3em;
+  color: #ffffff !important;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.6em;
+  font-weight: bold;
+  height: calc(4.75em + 2px);
+  letter-spacing: 0.25em;
+  line-height: 4.75em;
+  outline: 0;
+  padding: 0 3.75em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-bottom: 20px;
+}
+.main_container .login_container .login_form .sign_up_btn:hover {
+  transition: border-color 0.2s ease;
+  border-color: #e0dcdc !important;
+  background-color: #5b5bd6;
+}
+.top_nav_container {
   width: 100%;
   height: 50px;
   display: flex;
@@ -142,11 +223,11 @@ table {
   z-index: 1;
   background-color: white;
 }
-.main_container .top_nav_container .social_containers {
+.top_nav_container .social_containers {
   width: 50%;
   height: 50px;
 }
-.main_container .top_nav_container .social_containers .social {
+.top_nav_container .social_containers .social {
   width: 50%;
   height: 50px;
   display: flex;
@@ -154,18 +235,18 @@ table {
   align-items: center;
   cursor: pointer;
 }
-.main_container .top_nav_container .social_containers .social i {
+.top_nav_container .social_containers .social i {
   font-size: 20pt;
   margin-right: 10%;
 }
-.main_container .top_nav_container .nav_container {
+.top_nav_container .nav_container {
   width: 50%;
   height: 50px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.main_container .top_nav_container .nav_container nav a {
+.top_nav_container .nav_container nav a {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 1.15rem;
@@ -173,24 +254,24 @@ table {
   color: grey;
   margin-right: 3.75rem;
 }
-.main_container .top_logo_container {
+.top_logo_container {
   width: 100%;
   height: 96px;
   border: 1px dashed lightgray;
   display: flex;
 }
-.main_container .top_logo_container .logo_container {
+.top_logo_container .logo_container {
   width: 25%;
   height: 100px;
   display: flex;
   justify-content: center;
 }
-.main_container .top_logo_container .logo_container img {
+.top_logo_container .logo_container img {
   width: 190px;
   height: 79px;
   margin-top: 35px;
 }
-.main_container .top_logo_container .middle_nav_container {
+.top_logo_container .middle_nav_container {
   width: 50%;
   height: 100px;
   display: flex;
@@ -198,7 +279,7 @@ table {
   align-items: flex-end;
   padding-bottom: 20px;
 }
-.main_container .top_logo_container .middle_nav_container a {
+.top_logo_container .middle_nav_container a {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 1.15rem;
@@ -206,18 +287,18 @@ table {
   color: grey;
   margin-right: 3.75rem;
 }
-.main_container .middle_container {
+.middle_container {
   width: 100%;
   height: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.main_container .middle_container .header_img_container {
+.middle_container .header_img_container {
   width: 100%;
   height: 600px;
 }
-.main_container .middle_container .header_img_container .header_img {
+.middle_container .header_img_container .header_img {
   width: 100%;
   height: 600px;
   background: url(../img/church-of-the-king-635531-unsplash.jpg) no-repeat;
@@ -226,14 +307,14 @@ table {
   -o-background-size: cover;
   background-size: cover;
 }
-.main_container .middle_container .middle_box_container {
+.middle_container .middle_box_container {
   width: 1000px;
   height: 350px;
   margin-top: -150px;
   display: flex;
   background-color: #0076C0;
 }
-.main_container .middle_container .middle_box_container .section1 {
+.middle_container .middle_box_container .section1 {
   width: 50%;
   height: 350px;
   border: 1px dashed lightgrey;
@@ -243,11 +324,11 @@ table {
   flex-direction: column;
   flex-wrap: wrap;
 }
-.main_container .middle_container .middle_box_container .section1 i {
+.middle_container .middle_box_container .section1 i {
   font-size: 5.75rem;
   color: white;
 }
-.main_container .middle_container .middle_box_container .section1 h2 {
+.middle_container .middle_box_container .section1 h2 {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 1.15rem;
@@ -255,21 +336,21 @@ table {
   color: white;
   margin-top: 1rem;
 }
-.main_container .middle_container .middle_box_container .section1 p {
+.middle_container .middle_box_container .section1 p {
   width: 300px;
   font-family: 'Lato', sans-serif;
   color: white;
   margin-top: 1rem;
   font-size: 12pt;
 }
-.main_container .middle_container .middle_box_container .section1 a {
+.middle_container .middle_box_container .section1 a {
   text-decoration: none;
   font-family: 'Lato', sans-serif;
   color: white;
   font-weight: 700;
   margin-top: 1rem;
 }
-.main_container .middle_container .middle_box_container .section2 {
+.middle_container .middle_box_container .section2 {
   width: 50%;
   height: 350px;
   border: 1px dashed #ececec;
@@ -279,38 +360,38 @@ table {
   flex-direction: column;
   flex-wrap: wrap;
 }
-.main_container .middle_container .middle_box_container .section2 i {
+.middle_container .middle_box_container .section2 i {
   font-size: 5.75rem;
   color: white;
 }
-.main_container .middle_container .middle_box_container .section2 h2 {
+.middle_container .middle_box_container .section2 h2 {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 1.15rem;
   text-decoration: none;
   color: white;
 }
-.main_container .middle_container .middle_box_container .section2 p {
+.middle_container .middle_box_container .section2 p {
   width: 300px;
   font-family: 'Lato', sans-serif;
   color: white;
   margin-top: 1rem;
   font-size: 12pt;
 }
-.main_container .middle_container .middle_box_container .section2 a {
+.middle_container .middle_box_container .section2 a {
   text-decoration: none;
   font-family: 'Lato', sans-serif;
   color: white;
   font-weight: 700;
   margin-top: 1rem;
 }
-.main_container .middle_content_container1 {
+.middle_content_container1 {
   width: 100%;
   height: 500px;
   display: flex;
   justify-content: center;
 }
-.main_container .middle_content_container1 .middle_content1 {
+.middle_content_container1 .middle_content1 {
   width: 70%;
   height: 500px;
   display: flex;
@@ -318,7 +399,7 @@ table {
   align-items: center;
   flex-direction: column;
 }
-.main_container .middle_content_container1 .middle_content1 h2 {
+.middle_content_container1 .middle_content1 h2 {
   width: 100%;
   color: blue;
   font-size: 1.8rem;
@@ -327,7 +408,7 @@ table {
   font-weight: 700;
   line-height: 2.5rem;
 }
-.main_container .middle_content_container1 .middle_content1 p {
+.middle_content_container1 .middle_content1 p {
   width: 85%;
   margin-top: 1.25rem;
   color: grey;
@@ -335,12 +416,12 @@ table {
   font-size: 1.5rem;
   line-height: 2.5rem;
 }
-.main_container .middle_content_container2 {
+.middle_content_container2 {
   width: 100%;
   height: 600px;
   display: flex;
 }
-.main_container .middle_content_container2 .information_content2 {
+.middle_content_container2 .information_content2 {
   width: 50%;
   height: 600px;
   display: flex;
@@ -348,32 +429,32 @@ table {
   align-items: center;
   justify-content: center;
 }
-.main_container .middle_content_container2 .middle_content_2 {
+.middle_content_container2 .middle_content_2 {
   width: 100%;
   height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.main_container .middle_content_container2 .middle_content_2 img {
+.middle_content_container2 .middle_content_2 img {
   width: 650px;
   height: 500px;
 }
-.main_container .middle_content_container2 .middle_content_2 h2 {
+.middle_content_container2 .middle_content_2 h2 {
   font-size: 1.5rem;
   font-family: 'Bree Serif', serif;
   font-family: 'Open Sans', sans-serif;
   color: grey;
   font-weight: 700;
 }
-.main_container .middle_content_container2 .middle_content_2 #info1 {
+.middle_content_container2 .middle_content_2 #info1 {
   font-size: 1.8rem;
   font-family: 'Bree Serif', serif;
   font-family: 'Open Sans', sans-serif;
   color: blue;
   font-weight: 700;
 }
-.main_container .middle_content_container2 .middle_content_2 p {
+.middle_content_container2 .middle_content_2 p {
   width: 80%;
   font-size: 1.5rem;
   font-family: 'Bree Serif', serif;
@@ -381,28 +462,28 @@ table {
   color: grey;
   line-height: 2.5rem;
 }
-.main_container .middle_content_container3 {
+.middle_content_container3 {
   width: 100%;
   height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.main_container .middle_content_container3 .middle_content_3 {
+.middle_content_container3 .middle_content_3 {
   width: 100%;
   height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.main_container .middle_content_container3 .middle_content_3 .information_content3 {
+.middle_content_container3 .middle_content_3 .information_content3 {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.main_container .middle_content_container3 .middle_content_3 .information_content3 h2 {
+.middle_content_container3 .middle_content_3 .information_content3 h2 {
   font-size: 1.5rem;
   font-family: 'Bree Serif', serif;
   font-family: 'Open Sans', sans-serif;
@@ -410,7 +491,7 @@ table {
   font-weight: 700;
   line-height: 2.5rem;
 }
-.main_container .middle_content_container3 .middle_content_3 .information_content3 #info2 {
+.middle_content_container3 .middle_content_3 .information_content3 #info2 {
   font-size: 1.8rem;
   font-family: 'Bree Serif', serif;
   font-family: 'Open Sans', sans-serif;
@@ -418,7 +499,7 @@ table {
   font-weight: 700;
   line-height: 2.5rem;
 }
-.main_container .middle_content_container3 .middle_content_3 .information_content3 p {
+.middle_content_container3 .middle_content_3 .information_content3 p {
   width: 80%;
   font-size: 1.5rem;
   font-family: 'Bree Serif', serif;
@@ -426,17 +507,17 @@ table {
   color: grey;
   line-height: 2.5rem;
 }
-.main_container .middle_content_container3 .middle_content_3 img {
+.middle_content_container3 .middle_content_3 img {
   width: 650px;
   height: 500px;
 }
-.main_container .checkout_btn_container {
+.checkout_btn_container {
   width: 100%;
   height: 100px;
   display: flex;
   justify-content: center;
 }
-.main_container .checkout_btn_container button {
+.checkout_btn_container button {
   color: #fff;
   background-color: #0076C0;
   border-color: #0076C0;
@@ -459,7 +540,7 @@ table {
   outline: none;
   border: none;
 }
-.main_container .checkout_btn_container button:hover {
+.checkout_btn_container button:hover {
   background-color: #0066a7;
 }
 footer {
