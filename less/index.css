@@ -239,6 +239,10 @@ table {
   font-size: 20pt;
   margin-right: 10%;
 }
+.top_nav_container .social_containers .social img {
+  width: 75px;
+  height: 75px;
+}
 .top_nav_container .nav_container {
   width: 50%;
   height: 50px;
@@ -296,25 +300,86 @@ table {
 }
 .middle_container .header_img_container {
   width: 100%;
-  height: 600px;
+  height: 680px;
+  /* Fading animation */
 }
-.middle_container .header_img_container .header_img {
+.middle_container .header_img_container .showSlide {
+  display: none;
+}
+.middle_container .header_img_container .showSlide img {
   width: 100%;
-  height: 600px;
-  background: url(../img/church-of-the-king-635531-unsplash.jpg) no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  height: 800px;
 }
-.middle_container .middle_box_container {
+.middle_container .header_img_container .slidercontainer {
+  max-width: 80%;
+  height: 800px;
+  margin: auto;
+}
+.middle_container .header_img_container .left,
+.middle_container .header_img_container .right {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.middle_container .header_img_container .right {
+  right: 160px;
+  border-radius: 3px 0 0 3px;
+}
+.middle_container .header_img_container .left:hover,
+.middle_container .header_img_container .right:hover {
+  background-color: rgba(115, 115, 115, 0.8);
+}
+.middle_container .header_img_container .content {
+  color: #eff5d4;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+}
+.middle_container .header_img_container .active {
+  background-color: #717171;
+}
+.middle_container .header_img_container .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.middle_box_container {
   width: 1000px;
   height: 350px;
-  margin-top: -150px;
+  margin-top: -50px;
   display: flex;
   background-color: #0076C0;
+  z-index: 0;
 }
-.middle_container .middle_box_container .section1 {
+.middle_box_container .section1 {
   width: 50%;
   height: 350px;
   border: 1px dashed lightgrey;
@@ -324,11 +389,11 @@ table {
   flex-direction: column;
   flex-wrap: wrap;
 }
-.middle_container .middle_box_container .section1 i {
+.middle_box_container .section1 i {
   font-size: 5.75rem;
   color: white;
 }
-.middle_container .middle_box_container .section1 h2 {
+.middle_box_container .section1 h2 {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 1.15rem;
@@ -336,21 +401,21 @@ table {
   color: white;
   margin-top: 1rem;
 }
-.middle_container .middle_box_container .section1 p {
+.middle_box_container .section1 p {
   width: 300px;
   font-family: 'Lato', sans-serif;
   color: white;
   margin-top: 1rem;
   font-size: 12pt;
 }
-.middle_container .middle_box_container .section1 a {
+.middle_box_container .section1 a {
   text-decoration: none;
   font-family: 'Lato', sans-serif;
   color: white;
   font-weight: 700;
   margin-top: 1rem;
 }
-.middle_container .middle_box_container .section2 {
+.middle_box_container .section2 {
   width: 50%;
   height: 350px;
   border: 1px dashed #ececec;
@@ -360,25 +425,25 @@ table {
   flex-direction: column;
   flex-wrap: wrap;
 }
-.middle_container .middle_box_container .section2 i {
+.middle_box_container .section2 i {
   font-size: 5.75rem;
   color: white;
 }
-.middle_container .middle_box_container .section2 h2 {
+.middle_box_container .section2 h2 {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 1.15rem;
   text-decoration: none;
   color: white;
 }
-.middle_container .middle_box_container .section2 p {
+.middle_box_container .section2 p {
   width: 300px;
   font-family: 'Lato', sans-serif;
   color: white;
   margin-top: 1rem;
   font-size: 12pt;
 }
-.middle_container .middle_box_container .section2 a {
+.middle_box_container .section2 a {
   text-decoration: none;
   font-family: 'Lato', sans-serif;
   color: white;
@@ -386,6 +451,7 @@ table {
   margin-top: 1rem;
 }
 .middle_content_container1 {
+  margin-top: 200px;
   width: 100%;
   height: 500px;
   display: flex;

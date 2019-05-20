@@ -45,7 +45,7 @@
             </section>
             <section class="nav_container">
                 <nav>
-                    <a href="#">Login</a>
+                    <a href="login.html">Login</a>
                     <a href="#">Pricing</a>
                     <a href="#">Contact</a>
 
@@ -60,15 +60,35 @@
                 <a href="#" id="start">Board Members</a>
                 <a href="#">Teacher</a>
                 <a href="#">School Admin</a>
-                <a href="#">About Us</a>
+                <a href="aboutUs.html">About Us</a>
             </section>
         </div>
         <section class="middle_container">
             <header class="header_img_container">
-                <section class="header_img">
+                <div class="slidercontainer">
+                    <div class="showSlide fade">
+                        <img src="img/church-of-the-king-635531-unsplash.jpg" />
+                        <div class="content"></div>
+                    </div>
+                    <div class="showSlide fade">
+                        <img src="img/children.jpeg" />
+                        <div class="content"></div>
+                    </div>
 
-                </section>
+                    <div class="showSlide fade">
+                        <img src="img/children2.jpeg" />
+                        <div class="content"></div>
+                    </div>
+                    <div class="showSlide fade">
+                        <img src="img/children3.jpeg" />
+                        <div class="content"></div>
+                    </div>
+                    <!-- Navigation arrows -->
+                    <a class="left" onclick="nextSlide(-1)">❮</a>
+                    <a class="right" onclick="nextSlide(1)">❯</a>
+                </div>
             </header>
+
             <div class="middle_box_container">
                 <section class="section1">
                     <i class="fa fa-graduation-cap" aria-hidden="true"></i>
@@ -85,6 +105,7 @@
                     <a href="#">BECOME A BOARD MEMBER PARTNER -></a>
                 </section>
             </div>
+
         </section>
         <div class="middle_content_container1">
             <section class="middle_content1">
