@@ -130,18 +130,18 @@ table {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
 }
-.main_container {
+.main_containermain_container {
   width: 100%;
   height: 100%;
 }
-.main_container .login_container {
+.main_containermain_container .login_container {
   width: 100%;
   height: 800px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.main_container .login_container .login_form {
+.main_containermain_container .login_container .login_form {
   color: rgba(255, 255, 255, 0.55);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16.5pt;
@@ -157,7 +157,7 @@ table {
   border-radius: 0.5em;
   border: solid 1px rgba(255, 255, 255, 0.15);
 }
-.main_container .login_container .login_form .firstname {
+.main_containermain_container .login_container .login_form .firstname {
   width: 350px;
   height: 50px;
   margin-bottom: 25px;
@@ -172,7 +172,7 @@ table {
   text-decoration: none;
   color: white !important;
 }
-.main_container .login_container .login_form .password {
+.main_containermain_container .login_container .login_form .password {
   width: 350px;
   height: 50px;
   margin-bottom: 25px;
@@ -186,7 +186,7 @@ table {
   padding: 0 1em;
   text-decoration: none;
 }
-.main_container .login_container .login_form .login_btn {
+.main_containermain_container .login_container .login_form .login_btn {
   width: 40%;
   transition: border-color 0.2s ease;
   background-color: transparent;
@@ -210,7 +210,7 @@ table {
   white-space: nowrap;
   margin-bottom: 20px;
 }
-.main_container .login_container .login_form .sign_up_btn:hover {
+.main_containermain_container .login_container .login_form .sign_up_btn:hover {
   transition: border-color 0.2s ease;
   border-color: #e0dcdc !important;
   background-color: #5b5bd6;
@@ -618,4 +618,39 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 800px) {
+  .main_container {
+    width: 800px;
+    border: 2px solid red;
+  }
+  .main_container .top_nav_container {
+    z-index: 0;
+    position: relative;
+  }
+  .main_container .logo_container img {
+    margin-top: 10px;
+  }
+  .main_container .middle_nav_container {
+    margin-top: -10px;
+    width: 100%;
+  }
+  .main_container .slidercontainer {
+    width: 100%;
+    height: 400px !important;
+    border: 2px solid red;
+  }
+  .main_container .slidercontainer .showSlide img {
+    border: 2px solid blue;
+    width: 100%;
+    height: 400px;
+  }
+  .main_container .slidercontainer .right {
+    right: 50px;
+    border-radius: 3px 0 0 3px;
+  }
+  .main_container .middle_box_container {
+    border: 2px solid black;
+    width: 90%;
+  }
 }
