@@ -140,7 +140,7 @@ table {
     // background-color: #5e42a6;
 }
 
-.main_containermain_container {
+.main_container {
     width: 100%;
     height: 100%;
 
@@ -168,6 +168,7 @@ table {
             align-items: center;
             border-radius: 0.5em;
             border: solid 1px rgba(255, 255, 255, 0.15);
+
 
             .firstname {
                 width: 350px;
@@ -770,7 +771,19 @@ footer {
 @media (max-width: 800px) {
     .main_container {
         width: 800px;
-        border: 2px solid red;
+        height: 100%;
+
+        // border: 2px solid blue;
+
+        .login_container {
+            width: 100%;
+            // border: 2px solid red;
+
+            .login_form {
+                width: 70%;
+                // border: 2px solid black;
+            }
+        }
 
         .top_nav_container {
             // flex-direction: column;
@@ -783,6 +796,7 @@ footer {
 
             img {
                 margin-top: 10px;
+                margin-left:100px;
             }
 
         }
@@ -795,10 +809,10 @@ footer {
         .slidercontainer {
             width: 100%;
             height: 400px !important;
-            border: 2px solid red;
+            // border: 2px solid red;
 
             .showSlide img {
-                border: 2px solid blue;
+                // border: 2px solid blue;
                 width: 100%;
                 height: 400px;
             }
@@ -810,8 +824,59 @@ footer {
         }
 
         .middle_box_container {
-            border: 2px solid black;
+            // border: 2px solid black;
             width: 90%;
+        }
+
+        .middle_content_container1 {
+            margin-top: -10px;
+            width: 100%;
+            height: 500px;
+            margin-bottom: 150px;
+
+        }
+
+        .middle_content_container2 {
+            // border: 2px solid red;
+            height: 600px;
+            flex-direction: column;
+            margin-bottom: 500px;
+
+            .middle_content_2 {
+                flex-direction: column;
+                height: 1000px;
+                order: -1;
+
+                // border:2px solid blue;
+
+                img {
+                    margin-top: 50px;
+                    height: 400px;
+                    width: 600px;
+                    // border: 2px solid red;
+                }
+            }
+        }
+
+        .middle_content_container3 {
+            .middle_content_3 {
+                flex-direction: column;
+                // border: 2px solid black;
+                height: 1000px;
+
+
+                img {
+                    margin-top: 20px;
+                    height: 400px;
+                    width: 600px;
+                    // border: 2px solid red;
+                }
+            }
+        }
+
+        .checkout_btn_container {
+            // border: 2px solid brown;
+            margin-top: 300px;
         }
     }
 }
