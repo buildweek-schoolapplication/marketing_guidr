@@ -759,6 +759,7 @@ footer {
   }
   .main_container .middle_content_container2 {
     width: 500px;
+    height: 1300px;
     margin-top: 300px;
   }
   .main_container .middle_content_container2 img {
@@ -770,16 +771,16 @@ footer {
     margin-top: 200px;
   }
   .main_container .middle_content_container3 {
-    margin-top: 200px;
+    margin-top: 0px;
   }
   .main_container .middle_content_container3 .information_content3 {
-    margin-top: 1000px;
+    margin-top: 100px;
   }
   .main_container .middle_content_container3 img {
     height: 50px;
     width: 50px;
   }
   .main_container .checkout_btn_container {
-    margin-top: 1100px;
+    margin-top: 600px;
   }
 }
