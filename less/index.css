@@ -780,6 +780,7 @@ footer {
   }
   .main_container .middle_content_container2 .information_content2 {
     margin-top: 200px;
+    border: 2px solid red;
   }
   .main_container .middle_content_container3 {
     margin-top: 200px;
