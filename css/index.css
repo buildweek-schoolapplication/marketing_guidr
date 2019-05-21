@@ -721,10 +721,8 @@ footer {
   .main_container .top_logo_container .logo_container {
     width: 70%;
     justify-content: center;
-    border: 2px solid blue;
   }
   .main_container .slidercontainer {
-    border: 2px solid blue;
     height: 100%;
   }
   .main_container .slidercontainer .showSlide img {
@@ -748,20 +746,23 @@ footer {
   .main_container .middle_box_container {
     display: none;
     height: 10px;
+    width: 100%;
   }
   .main_container .middle_box_container .middle_content1 {
     height: 50px;
+    width: 100%;
   }
   .main_container .middle_content_container1 {
     margin-top: -250px;
+    width: 100%;
+    margin-bottom: 450px;
   }
   .main_container .middle_content_container2 {
     width: 500px;
-    border: 2px solid red;
     margin-top: 300px;
   }
   .main_container .middle_content_container2 img {
-    border: 2px solid blue;
+    margin-top: 1050px;
     height: 50px;
     width: 50px;
   }
@@ -770,6 +771,15 @@ footer {
   }
   .main_container .middle_content_container3 {
     margin-top: 200px;
-    border: 2px solid black;
+  }
+  .main_container .middle_content_container3 .information_content3 {
+    margin-top: 1000px;
+  }
+  .main_container .middle_content_container3 img {
+    height: 50px;
+    width: 50px;
+  }
+  .main_container .checkout_btn_container {
+    margin-top: 1100px;
   }
 }
