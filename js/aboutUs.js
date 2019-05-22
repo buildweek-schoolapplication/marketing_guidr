@@ -1,3 +1,8 @@
+const icons = document.querySelectorAll(".icon");
+console.log(icons);
+
+
+
 class Link {
     constructor(link) {
         this.link = link;
