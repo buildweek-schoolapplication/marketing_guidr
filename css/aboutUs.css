@@ -253,15 +253,15 @@ table {
   color: grey;
   margin-right: 3.75rem;
 }
-.nav {
+.menu-dropdown {
   padding-top: 3.1rem;
   border-top: 1px solid black;
   border-bottom: 1px solid lightgrey;
   display: flex;
-  background-color: lightgrey;
+  background-color: white;
   align-items: center;
 }
-.nav img {
+.menu-dropdown img {
   width: 190px;
   height: 50px;
   object-fit: cover;
@@ -280,6 +280,9 @@ table {
   text-decoration: none;
   color: black;
 }
+.icon {
+  display: none;
+}
 @media (max-width: 500px) {
   nav {
     height: 100px;
@@ -292,9 +295,6 @@ table {
     justify-content: center;
     margin: auto 0;
   }
-  .click {
-    display: block;
-  }
   .nav .icon {
     width: 50px;
     height: 50px;
@@ -304,11 +304,9 @@ table {
   .menu-dropdown {
     display: flex;
     flex-direction: column;
-    padding-left: 150px;
-    align-items: flex-end;
-    justify-items: flex-end;
+    padding-left: 180px;
   }
-  li {
+  .click {
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -320,7 +318,7 @@ table {
     padding-top: 120px;
   }
   li {
-    display: block;
+    display: none;
   }
 }
 #img {

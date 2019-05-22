@@ -255,12 +255,12 @@ table {
   margin-right: 3.75rem;
 }
 
-.nav{
+.menu-dropdown{
     padding-top: 3.1rem;
     border-top: 1px solid black;
     border-bottom: 1px solid lightgrey;
     display: flex;
-    background-color: lightgrey;
+    background-color: white;
     align-items: center;
 
      img{
@@ -286,6 +286,10 @@ table {
     }
 }
 
+.icon {
+  display: none;
+}
+
 @media(max-width: 500px) {
 nav {
   height: 100px;
@@ -301,9 +305,7 @@ nav {
     margin: auto 0;
   }
 
-  .click {
-    display: block;
-  }
+  
 
   .nav .icon{
     width: 50px;
@@ -315,15 +317,14 @@ nav {
   .menu-dropdown {
     display: flex;
     flex-direction: column;
-    padding-left: 150px;
-    align-items: flex-end;
-    justify-items: flex-end;
+    padding-left: 180px;
+    
 
   }
 
 
 
-  li {
+  .click {
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -338,7 +339,7 @@ nav {
   }
 
   li {
-    display: block;
+    display: none;
   }
 
 }
