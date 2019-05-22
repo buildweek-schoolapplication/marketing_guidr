@@ -258,7 +258,7 @@ table {
   border-top: 1px solid black;
   border-bottom: 1px solid lightgrey;
   display: flex;
-  background-color: white;
+  background-color: wheat;
   align-items: center;
 }
 .menu-dropdown img {
