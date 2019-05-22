@@ -724,16 +724,6 @@ footer {
     width: 70%;
     justify-content: center;
   }
-  .main_container .top_logo_container .middle_nav_container {
-    width: 100%;
-  }
-  .main_container .top_logo_container .middle_nav_container a {
-    font-size: 14pt;
-    text-align: center;
-  }
-  .main_container .top_logo_container .middle_nav_container #start {
-    margin-left: 60px;
-  }
   .main_container .slidercontainer {
     height: 100%;
   }
@@ -755,6 +745,10 @@ footer {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
   }
+  .main_container .slidercontainer .right {
+    right: 45px!important;
+    border-radius: 3px 0 0 3px;
+  }
   .main_container .middle_box_container {
     display: none;
     height: 10px;
@@ -765,7 +759,7 @@ footer {
     width: 100%;
   }
   .main_container .middle_content_container1 {
-    margin-top: -250px;
+    margin-top: -30px;
     width: 100%;
     margin-bottom: 450px;
   }
@@ -780,7 +774,6 @@ footer {
   }
   .main_container .middle_content_container2 .information_content2 {
     margin-top: 200px;
-    border: 2px solid red;
   }
   .main_container .middle_content_container3 {
     margin-top: 200px;
@@ -794,5 +787,52 @@ footer {
   }
   .main_container .checkout_btn_container {
     margin-top: 1100px;
+  }
+}
+@media (max-width: 1000px) {
+  .main_container {
+    width: 100%;
+    height: 100%;
+  }
+  .main_container .middle_nav_container a {
+    height: 20px;
+    font-size: 12pt;
+  }
+  .main_container .slidercontainer {
+    width: 800px;
+    height: 200px;
+  }
+  .main_container .slidercontainer .showSlide img {
+    height: 600px;
+  }
+  .main_container .slidercontainer .right {
+    right: 0px;
+    border-radius: 3px 0 0 3px;
+  }
+  .main_container .slidercontainer .right {
+    right: 100px;
+    border-radius: 3px 0 0 3px;
+  }
+  .main_container .middle_content_container2 {
+    width: 100%;
+    height: 700px;
+  }
+  .main_container .middle_content_container2 .middle_content_2 {
+    width: 100%;
+  }
+  .main_container .middle_content_container2 .middle_content_2 img {
+    height: 500px;
+    width: 550px;
+  }
+  .main_container .middle_content_container3 {
+    width: 100%;
+    height: 700px;
+  }
+  .main_container .middle_content_container3 .middle_content_3 {
+    width: 100%;
+  }
+  .main_container .middle_content_container3 .middle_content_3 img {
+    height: 500px;
+    width: 550px;
   }
 }
