@@ -642,6 +642,9 @@ footer {
     margin-top: -10px;
     width: 100%;
   }
+  .main_container .middle_nav_container #start {
+    margin-left: 50px;
+  }
   .main_container .slidercontainer {
     width: 100%;
     height: 400px !important;
@@ -696,6 +699,15 @@ footer {
     width: 100%;
     height: 100%;
   }
+  .main_container .login_container {
+    width: 100%;
+  }
+  .main_container .login_container .login_form {
+    width: 100%;
+  }
+  .main_container .login_container .login_form .login_btn {
+    width: 200px;
+  }
   .main_container .top_nav_container {
     height: 100px;
     flex-direction: column;
@@ -714,7 +726,6 @@ footer {
   .main_container .top_logo_container {
     width: 100%;
     height: 300px;
-    border: 2px solid black;
     flex-direction: column;
     justify-content: center;
   }
@@ -743,6 +754,10 @@ footer {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
   }
+  .main_container .slidercontainer .right {
+    right: 45px !important;
+    border-radius: 3px 0 0 3px;
+  }
   .main_container .middle_box_container {
     display: none;
     height: 10px;
@@ -753,7 +768,7 @@ footer {
     width: 100%;
   }
   .main_container .middle_content_container1 {
-    margin-top: -250px;
+    margin-top: -30px;
     width: 100%;
     margin-bottom: 450px;
   }
@@ -781,5 +796,58 @@ footer {
   }
   .main_container .checkout_btn_container {
     margin-top: 1100px;
+  }
+}
+@media (max-width: 1000px) {
+  .main_container {
+    width: 100%;
+    height: 100%;
+  }
+  .main_container .login_container {
+    width: 100%;
+  }
+  .main_container .login_container .login_form {
+    width: 60%;
+  }
+  .main_container .middle_nav_container a {
+    height: 20px;
+    font-size: 12pt;
+  }
+  .main_container .slidercontainer {
+    width: 800px;
+    height: 200px;
+  }
+  .main_container .slidercontainer .showSlide img {
+    height: 600px;
+  }
+  .main_container .slidercontainer .right {
+    right: 0px;
+    border-radius: 3px 0 0 3px;
+  }
+  .main_container .slidercontainer .right {
+    right: 100px;
+    border-radius: 3px 0 0 3px;
+  }
+  .main_container .middle_content_container2 {
+    width: 100%;
+    height: 700px;
+  }
+  .main_container .middle_content_container2 .middle_content_2 {
+    width: 100%;
+  }
+  .main_container .middle_content_container2 .middle_content_2 img {
+    height: 500px;
+    width: 550px;
+  }
+  .main_container .middle_content_container3 {
+    width: 100%;
+    height: 700px;
+  }
+  .main_container .middle_content_container3 .middle_content_3 {
+    width: 100%;
+  }
+  .main_container .middle_content_container3 .middle_content_3 img {
+    height: 500px;
+    width: 550px;
   }
 }
