@@ -699,6 +699,15 @@ footer {
     width: 100%;
     height: 100%;
   }
+  .main_container .login_container {
+    width: 100%;
+  }
+  .main_container .login_container .login_form {
+    width: 100%;
+  }
+  .main_container .login_container .login_form .login_btn {
+    width: 200px;
+  }
   .main_container .top_nav_container {
     height: 100px;
     flex-direction: column;
@@ -746,7 +755,7 @@ footer {
     border-radius: 0 3px 3px 0;
   }
   .main_container .slidercontainer .right {
-    right: 45px!important;
+    right: 45px !important;
     border-radius: 3px 0 0 3px;
   }
   .main_container .middle_box_container {
@@ -793,6 +802,12 @@ footer {
   .main_container {
     width: 100%;
     height: 100%;
+  }
+  .main_container .login_container {
+    width: 100%;
+  }
+  .main_container .login_container .login_form {
+    width: 60%;
   }
   .main_container .middle_nav_container a {
     height: 20px;
