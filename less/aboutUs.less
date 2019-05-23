@@ -130,6 +130,12 @@ table {
   box-sizing: border-box;
 }
 
+
+
+.container {
+  width: 100%;
+}
+
 .main_container .login_container {
   width: 100%;
   height: 800px;
@@ -235,6 +241,17 @@ table {
   font-size: 20pt;
   margin-right: 10%;
 }
+@media (max-width: 500px) {
+
+  .social_containers {
+    padding-left: 25px;
+  }
+
+  .top_nav_container .social_containers .social i {
+
+  margin-right: 15px;
+  }
+}
 .top_nav_container .social_containers .social img {
   width: 75px;
   height: 75px;
@@ -255,13 +272,21 @@ table {
   margin-right: 3.75rem;
 }
 
-.menu-dropdown{
+@media (max-width: 500px) {
+  .top_nav_container .nav_container nav a{
+   margin-right: 1rem;
+  }
+}
+
+.nav{
     padding-top: 3.1rem;
     border-top: 1px solid black;
     border-bottom: 1px solid lightgrey;
     display: flex;
     background-color: white;
     align-items: center;
+    width: 100%;
+    
 
      img{
       width: 190px;
@@ -270,12 +295,12 @@ table {
     }
 }
 
-.nav ul{
+ #ul {
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 60%;
+    width: 1000px;
     height: 50px;
     text-decoration: none;
     list-style: none;
@@ -286,64 +311,75 @@ table {
     }
 }
 
+
+
 .icon {
   display: none;
 }
 
 @media(max-width: 500px) {
-nav {
-  height: 100px;
-  margin: auto 0;
-  padding: 0;
-}
 
-  .nav ul{
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto 0;
+  .nav {
+    height: 108px;
   }
 
-  
 
-  .nav .icon{
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    margin-top: 45px;
-  }
 
   .menu-dropdown {
     display: flex;
     flex-direction: column;
-    padding-left: 180px;
-    
+    justify-content: center;
+    // align-items: center;
 
   }
 
-
-
-  .click {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    text-align: center;
-    padding-top: 10px;
-    color: white;
-
-  }
-
-  ul .child {
-    padding-top: 120px;
-  }
-
-  li {
-    display: none;
-  }
-
+.nav {
+  display: flex;
 }
 
+  .nav .icon{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-left: 180px;
+    padding-top: 8px;
+    position: absolute;
+    cursor: pointer;
+
+  }
+
+  
+    #ul{
+      padding: 0px;
+      margin: 0px;
+      display: none;
+     
+        
+   }
+       #ul.active {
+        
+       display: block;
+
+        li {
+         padding-left: 180px;
+         padding-top: 10px;
+         color: white;
+         margin-bottom: 4px;
+
+        }
+        .child {
+          padding-top: 55px;
+       }
+
+      a {
+        cursor: pointer;
+
+      }       
+       }     
+       
+      }
+    
+  
 #img {
     background-image: url("../img/campaign-creators-1166997-unsplash-1.jpg");
     width: 100%;
@@ -419,7 +455,7 @@ nav {
 
     
     .block {
-        width: 850px;
+        width: 75%;
         text-align: center;
         margin: 0 auto;
         font-size: 1rem;
@@ -468,7 +504,7 @@ justify-content: center;
 }
 
 .tabs {
-  width: 250px;
+  width: 20%;
   display: flex;
   justify-content: space-evenly;
   }
@@ -528,7 +564,7 @@ justify-content: center;
       justify-items: center;
       align-items: center;
       text-align: center;
-      width:50%;
+      width: 50%;
     }
   }
 
@@ -608,6 +644,14 @@ li {
   color: #3B3B3B;
 }
 
+.list-container {
+  width: 100%;
+  background-color: #F6F6F6;
+  display: flex;
+  justify-content: center;
+
+}
+
 .list {
   display: flex;
   flex-direction: column;
@@ -617,7 +661,7 @@ li {
 
 .footer {
   background-color: #3A3E41;
-  height: 500px;
+  height: 28rem;
   width: 100%;
   display: flex;
 
@@ -636,14 +680,14 @@ li {
 }
 
 .register-form input{
-  width: 248px;
-  height: 55px;
+  width: 15rem;
+  height: 3.4rem;
 
 }
 
 button {
-  width: 115px;
-  height: 55px;
+  width: 9rem;
+  height: 3.4rem;
   background-color: dodgerblue;
   color: white;
   margin: 0;
@@ -674,7 +718,7 @@ p {
 
   img {
     padding-top: 3rem;
-    border-radius: 20px;
+    border-radius: 2rem;
   }
 
 
@@ -719,3 +763,23 @@ a {
 
 }
 
+@media (max-width: 500px) {
+  
+  .footer {
+    
+    .mid-footer-content {
+      display: none;
+    }
+
+    .footer-nav {
+      display: none;
+    }
+  
+
+}
+
+}
+
+html,body {
+ overflow-x: hidden;
+}
