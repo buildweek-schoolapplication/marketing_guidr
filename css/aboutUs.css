@@ -300,7 +300,7 @@ table {
 .icon {
   display: none;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   .nav {
     height: 108px;
   }
@@ -340,6 +340,13 @@ table {
   }
   #ul.active a {
     cursor: pointer;
+  }
+}
+@media (min-width: 800px) {
+  #ul {
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
   }
 }
 #img {
