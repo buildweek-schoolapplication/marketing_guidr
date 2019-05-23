@@ -1,7 +1,31 @@
-const icons = document.querySelectorAll(".icon");
-console.log(icons);
+// class Pulldown {
+//     constructor(icon) {
+//         this.icon = icon;
+//         console.log(this.icon);
+//         this.click = document.querySelectorAll('a');
+//         console.log(this.click);
+//         this.icon.addEventListener('click', this.expandPulldown.bind(this));
+//     }
+//     expandPulldown() {
+//         // Using our reference to the domElement, toggle a class to expand or hide the article.
+//     this.click.classList.toggle('li');
+//       }
+// }
 
 
+// let icon = document.querySelectorAll('.icon');
+// console.log(icon);
+// icon.forEach(function(icon) {
+//     return new Pulldown(icon);
+//     });
+
+var li = document.querySelector('.li');
+document.querySelector('.icon').addEventListener('click', openMenu);
+
+function openMenu() {
+   
+    document.getElementById("ul").classList.toggle('active')
+}
 
 class Link {
     constructor(link) {
