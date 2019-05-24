@@ -325,9 +325,6 @@ table {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // align-items: center;
-
-  
 
 
   
@@ -353,20 +350,20 @@ table {
        #ul.active {
         
        display: block;
-
+a {
         li {
          padding-left: 180px;
          padding-top: 10px;
          color: white;
          margin-bottom: 4px;
+         cursor: pointer;
 
         }
         .child {
           padding-top: 55px;
        }
 
-      a {
-        cursor: pointer;
+      
 
       }       
        }     
@@ -690,6 +687,7 @@ align-items: center;
   }
 
   .list {
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
   }
@@ -701,20 +699,21 @@ align-items: center;
   height: 28rem;
   width: 100%;
   display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 20px;
+  
 
 
   p {
-    padding-top: 2rem;
     font-size: 1.1rem;
     color: white;
-    padding-left: 1rem;
 
   }
 
-  .text-button {
-    padding-left: 1rem;
+  // .text-button {
 
-  }
+  // }
 
   .register-form input{
     width: 15rem;
@@ -735,21 +734,27 @@ align-items: center;
 }
 
 .mid-footer-content {
-  margin: auto 0;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   margin-right: 0px;
+  
+.partner {
+  width: 400px;
+  padding-right: 80px;
 
+}
 
 h3 {
   color: lightgray;
+  padding-bottom: 10px;
   
 }
 
 p {
   color: white;
+  line-height: 20px;
 
 }
 
@@ -772,8 +777,6 @@ input {
 .footer-nav {
   display: flex;
   align-items: flex-start;
-  padding-top: 4rem;
-  padding-left: 10rem;
 
   .menu {
   color: #F6F6F6;
@@ -802,7 +805,8 @@ input {
     flex-direction: column;
     align-items: center;
     text-align: center;
-
+    justify-content: flex-start;
+    padding-top: 50px;
     .mid-footer-content {
       display: none;
     }
